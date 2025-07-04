@@ -5,27 +5,20 @@ A full-stack web application to manage a grocery store’s operations like addin
 ---
 
 ## 📸 Screenshots
-![image](https://github.com/user-attachments/assets/a710f548-3f4c-4920-a13e-be8516eb3093)
-
-
 <details>
 <summary>🔽 Click to view</summary>
 
 ### 💻 UI - Manage Products  
-<img src="![image](https://github.com/user-attachments/assets/97cee621-ceaa-4276-ae22-69a0c4da134c)
-" width="600"/>
+<img src="https://github.com/user-attachments/assets/97cee621-ceaa-4276-ae22-69a0c4da134c" width="600"/>
 
 ### 🧾 UI - Place Order  
-<img src="![image](https://github.com/user-attachments/assets/b7f3152e-9f71-4587-b0f0-bd837de81157)
-" width="600"/>
+<img src="https://github.com/user-attachments/assets/b7f3152e-9f71-4587-b0f0-bd837de81157" width="600"/>
 
 ### 📊 UI - Dashboard  
-<img src="![image](https://github.com/user-attachments/assets/a890dfab-b9dc-4715-9808-90e90b7fed31)
-" width="600"/>
+<img src="https://github.com/user-attachments/assets/a890dfab-b9dc-4715-9808-90e90b7fed31" width="600"/>
 
 ### 🗃️ MySQL Database View  
-<img src="![image](https://github.com/user-attachments/assets/c35d0fb3-ddf4-44aa-a659-51a408bee4af)
-" width="600"/>
+<img src="https://github.com/user-attachments/assets/c35d0fb3-ddf4-44aa-a659-51a408bee4af" width="600"/>
 
 </details>
 
