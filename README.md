@@ -51,25 +51,7 @@ A full-stack web application to manage a grocery store’s operations — like a
 
 ## 📁 Folder Structure
 
-grocery-backend-main/
-├── app.py # Flask app entry point
-├── requirements.txt # Python dependencies
-├── runtime.txt # Python version info
-├── sql_connection.py # MySQL DB connection
-├── *.py # DAO scripts (product/order logic)
-│
-├── ui/ # Frontend files
-│ ├── index.html
-│ ├── login.html
-│ ├── manage-product.html
-│ ├── order.html
-│ ├── js/
-│ │ └── custom/
-│ │ ├── common.js
-│ │ ├── dashboard.js
-│ │ ├── order.js
-│ │ └── manage-product.js
-│ ├── css/ # Bootstrap, custom styles
+![image](https://github.com/user-attachments/assets/71673aef-2230-49dd-9da9-cc8f1f07cea9)
 
 
 ---
