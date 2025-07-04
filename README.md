@@ -1,6 +1,6 @@
 # 🛒 Grocery Store Management System (GSMS)
 
-A full-stack web application to manage a grocery store’s operations like adding products, placing orders, and viewing sales reports — built using **Python (Flask)**, **MySQL**, **HTML/CSS/JS**, and **Bootstrap**.
+A full-stack web application to manage a grocery store’s operations — like adding products, placing orders, and viewing sales reports — built using **Python (Flask)**, **MySQL**, **HTML/CSS/JS**, and **Bootstrap**.
 
 ---
 
@@ -27,11 +27,11 @@ A full-stack web application to manage a grocery store’s operations like addin
 ## 🧠 Features
 
 - ✅ Add and delete grocery products
-- ✅ Set price and unit of measurement (e.g. kg, litre)
-- ✅ Create new customer orders
-- ✅ Calculate total cost in real-time
-- ✅ Store and retrieve order history from MySQL
-- ✅ Login/logout using local storage
+- ✅ Set price and unit (e.g. kg, litre)
+- ✅ Create customer orders
+- ✅ Real-time total price calculation
+- ✅ Store and retrieve orders from MySQL
+- ✅ Login/logout with localStorage
 - ✅ Fully responsive UI (Bootstrap)
 
 ---
@@ -45,19 +45,18 @@ A full-stack web application to manage a grocery store’s operations like addin
 | UI Framework| Bootstrap 4                  |
 | Database    | MySQL                        |
 | Tools       | MySQL Workbench, Git, GitHub |
-| Deployment  | Localhost (can be hosted)    |
+| Deployment  | Localhost (dev mode)         |
 
 ---
 
 ## 📁 Folder Structure
 
 grocery-backend-main/
-│
 ├── app.py # Flask app entry point
 ├── requirements.txt # Python dependencies
-├── runtime.txt # Python version for deploy
-├── sql_connection.py # MySQL connection setup
-├── *.py # DAO scripts (product/order handling)
+├── runtime.txt # Python version info
+├── sql_connection.py # MySQL DB connection
+├── *.py # DAO scripts (product/order logic)
 │
 ├── ui/ # Frontend files
 │ ├── index.html
@@ -65,14 +64,12 @@ grocery-backend-main/
 │ ├── manage-product.html
 │ ├── order.html
 │ ├── js/
-│ │ ├── custom/
-│ │ │ ├── common.js
-│ │ │ ├── dashboard.js
-│ │ │ ├── order.js
-│ │ │ ├── manage-product.js
-│ ├── css/ # Bootstrap, style.css, custom.css
-│ └── screenshots/ # UI & DB screenshots (optional)
-
+│ │ └── custom/
+│ │ ├── common.js
+│ │ ├── dashboard.js
+│ │ ├── order.js
+│ │ └── manage-product.js
+│ ├── css/ # Bootstrap, custom styles
 
 
 ---
@@ -81,61 +78,62 @@ grocery-backend-main/
 
 ### 🔧 Backend (Flask)
 
-1. Clone the repository:
+1. **Clone the repository:**
    ```bash
    git clone https://github.com/ayush2438/grocery-backend-main.git
    cd grocery-backend-main
 
-Create a virtual environment:
-
+2.Create virtual environment:
 python3 -m venv .venv
 source .venv/bin/activate
-Install dependencies:
 
-
+3.Install dependencies:
 pip install -r requirements.txt
-Start the Flask server:
 
+4.Start Flask server:
 python app.py
-Flask server will run at http://127.0.0.1:5000/
+The server will start at: http://127.0.0.1:5000
 
 🌐 Frontend
-Navigate to ui/index.html
+1.Navigate to ui/index.html
 
-Open it in a browser (double-click or use VS Code Live Server)
+2.Open it in your browser (double-click or use VS Code Live Server)
 
-First login using the login.html form
+3.Login via login.html form (no password validation used currently)
 
 🗄️ MySQL Setup
-Start MySQL Workbench
+1.Open MySQL Workbench
 
-Create a new database:
-
+2.RUN
 CREATE DATABASE grocery_store;
-Import the products, orders, order_details, uom tables from your local .sql file or manually create via Workbench.
 
-Update your credentials in sql_connection.py if needed.
+3.Create/import the following tables: products, orders, order_details, uom
+
+4.Make sure sql_connection.py has your correct DB credentials
+
+
 
 🔐 Login Credentials
-Currently handled using localStorage in login.html.
-Backend accepts any hardcoded test credentials. (Can be extended)
+Currently handled on frontend using localStorage.
+⚠️ No authentication — for demo only.
 
-✍️ Author
+👨‍💻 Author
 Ayush Tomar
-👨‍💻 B.Tech CSE Student
+🎓 B.Tech CSE Student
 📍 Gwalior, India
 🔗 GitHub Profile
 
 📦 Future Improvements
-🔒 Secure login with proper authentication
+🔒 Add real authentication & JWT
 
-🌐 Deploy to Render/Heroku + Netlify for frontend
+🌐 Deploy backend to Render / frontend to Netlify
 
-🚶🏻
+📊 Add analytics dashboard
 
-📈 Add analytics dashboard
+🛍️ Add product categories & search
 
-🛍️ Add product categories and search filter
+📱 Fully mobile-first layout
 
-📱 Make it mobile-first fully
+
+
 
